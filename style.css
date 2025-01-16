@@ -1,0 +1,420 @@
+@charset "utf-8";
+
+/* index.html */
+
+/* 共通 */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.subtitle {
+  text-align: center;
+}
+
+/* ヘッダー */
+header {
+  /* text-align: center; */
+  height: 700px;
+  padding: 32px 0;
+  background-image: url(basket.jpg) ;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: lighten;
+}
+
+.head-color {
+  /* background: aqua; */
+  margin-top: 100px;
+}
+
+.title {
+  margin-left: 20px;
+}
+
+.title a {
+  text-decoration: none;
+}
+
+header h1 {
+  font-size: 48px;
+  font-weight: bold;
+  /* background-color: aqua; */
+}
+
+header h2 {
+  font-size: 32px;
+  /* background-color: blueviolet; */
+}
+
+.title p {
+  font-size: 12px;
+  /* background-color: darkorange; */
+}
+
+
+header .welcome {
+  margin-top: 60px;
+  text-align: center;
+  animation: up_down 2s infinite;
+}
+
+@keyframes up_down {
+  0% {
+    transform: translate(0,-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0,0);
+    opacity: 1;
+  }
+}
+
+/* ヘッダー ハンバーガーメニュー */
+
+.sp-menu {
+  margin-left: auto;
+}
+
+.sp-menu #open {
+  position: fixed;
+  top: 0px;
+  right: 16px;
+  font-size: 32px;
+  line-height: 64px;
+  cursor: pointer;
+}
+
+.sp-menu #open.hide {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  /* background: yellow; */
+  text-align: center;
+  margin: 0;
+  width: 200px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.overlay.show {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+.overlay #close {
+  /* position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 32px; */
+  cursor: pointer;
+}
+
+.overlay ul {
+  /* display: flex; */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+.overlay li {
+  padding: 10px 0;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.overlay li:hover{
+  background: rgb(184, 184, 173);
+}
+
+.overlay a {
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+.overlay.show li {
+  opacity: 1;
+  transform: none;
+}
+
+.pc-menu {
+  display: none;
+}
+
+
+/* トップボタン */
+
+#to_top {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  opacity: 0;
+}
+
+#to_top i {
+  font-size: 32px;
+  color: rgb(170, 159, 159);
+}
+
+#to_top.scrolled {         
+  transition: opasity 0.5s;
+  opacity: 1;
+}
+
+
+/* メイン */
+
+main {
+  /* text-align: center; */
+  /* background-image: url(main-images.jfif) ; */
+  /* background-size: cover; */
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: lighten;
+}
+
+/* 自己紹介 */
+
+.about {
+  padding: 100px 0;
+  /* background: orange; */
+}
+
+.profile {
+  font-size: 14px;
+  display: block;
+  margin: 80px auto 0;
+  padding-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 150px;
+  height: 30px;
+  background: rgb(158, 8, 8);
+  color: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  transition: 0.3s;
+}
+
+.profile:hover{
+  background: rgb(185, 151, 151);
+  border: 1px solid rgb(185, 151, 151);
+  box-shadow: 0px 0px 5px;
+  transition: 0.2s;
+}
+
+.me {
+  display: flex;
+  padding: 0 10% 0;
+  place-content: center;
+  /* gap: 60px; */
+  text-align: left;
+  position: relative;
+}
+
+.main_image {
+  /* width: 50%;
+  height: auto; */
+  /* width: 50px;
+  height: 50px; */
+}
+
+.name {
+  font-weight: bold;
+}
+
+.explain {
+  /* background: pink; */
+  width: 500px;
+  margin: auto 0 auto 100px;
+}
+
+.explain p{
+  margin: 0;
+  font-size: 16px;
+  border-bottom: 1px solid black;
+  line-height: 42px;
+  padding: 0px 16px;
+  /* background: blue; */
+}
+
+.mickey{
+  width: 170px;
+  height: 230px;
+  position: absolute;
+  bottom: -900px;
+  right: 60px;
+  opacity: 0.6;
+}
+
+/* @media (max-width:600px) {
+  .main_image {
+    width: 25%;
+    height: 25%;
+  }
+} */
+
+/* works */
+
+.works {
+  margin-bottom: 0px;
+  padding-top: 100px;
+  /* background: pink; */
+}
+
+.works p {
+  text-align: center;
+}
+
+.card img{
+  margin: 0 auto;
+  display: block;
+}
+
+
+/* Skills */
+
+.skills {
+  /* background-image: url(256times.png) ;
+  background-size: contain;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: lighten; */
+  margin-top: 0px;
+  padding-top: 100px;
+}
+
+.school{
+  display: flex;
+  gap: 20px;
+  padding: 0 15% 0;
+  flex-wrap: wrap;
+  place-content: center;
+}
+
+.skill{
+  text-align: center;
+  margin-bottom: 120px;
+  width: 250px;
+  /* background: yellow; */
+}
+
+.skill img {
+  width: 150px;
+  height: 150px;
+}
+
+.skill button {
+  width: 120px;
+  padding: 10px 0;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.skill button:hover{
+  background: orange;
+  transition: 0.5s;
+}
+
+.skill a {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* アニメーション */
+.animate{
+  opacity: 0;
+  transition: transform 8s, opacity .8s;
+}
+.animate.appear{
+  opacity: 1;
+  /* transform: none; */
+}
+/* .animate.delay2{
+  transition-delay: 1s;
+}
+.animate.delay3{
+  transition-delay: 1.5s;
+} */
+
+
+/* フッター */
+
+footer {
+  color: black;
+  background:  linear-gradient(white,black);
+  text-align: center;
+  margin-top: 50px;
+}
+
+.message {
+  margin: 50px 0 20px 0;
+}
+
+.arrow {
+  animation: jo-ge 1.3s infinite;
+}
+
+@keyframes jo-ge {
+  0% {
+    transform: translate(0,-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0,0);
+    opacity: 1;
+  }
+}
+
+.form {
+  display: flex;
+  place-content: center;
+}
+
+.form .insta {
+  text-decoration: none;
+  margin-left: 100px;
+  /* background-color: aqua; */
+}
+
+.form img {
+  border-radius: 10px;
+}
+
+.inquiry {
+  background: white;
+  font-size: 18px;
+  padding: 35px 0;
+  width: 200px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.inquiry:hover{
+  background: lightgray;
+  border: 1px solid lightgray;
+  transition: 0.5s;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.small {
+  font-size: 10px;
+  color: white;
+}
