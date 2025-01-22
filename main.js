@@ -19,34 +19,52 @@
   }
   // ↑ハンバーガーここまで
 
-  // トップボタン
+  // 画像クリック
   {
-  function scrollCallback(entries) {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) {
-        header.classList.add("scrolled");
-        toTop.classList.add("scrolled");
-      } else {
-        header.classList.remove("scrolled");
-        toTop.classList.remove("scrolled");
-      }
+    const front = document.getElementById('front');
+    const cover = document.getElementById('cover');
+  
+    front.addEventListener('click',() => {
+      front.classList.add('hide');
+      cover.classList.add('show');
+    });
+  
+    cover.addEventListener('click',() =>{
+      front.classList.remove('hide');
+      cover.classList.remove('show');
     });
   }
+  // ↑画像クリックここまで
+  
 
-  const toTop =document.getElementById("to_top");
-  const header = document.querySelector("header");
+  // トップボタン
+  {
+    function scrollCallback(entries) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+          header.classList.add("scrolled");
+          toTop.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+          toTop.classList.remove("scrolled");
+        }
+      });
+    }
 
-  toTop.addEventListener("click",e=>{
-    e.preventDefault();    
-    window.scrollTo({
-      top:0,
-      behavior:"smooth",
-    });
-  })
+    const toTop =document.getElementById("to_top");
+    const header = document.querySelector("header");
 
-  const scrollObserver = new IntersectionObserver(scrollCallback);
-  scrollObserver.observe(document.getElementById("target-2"));
-}
+    toTop.addEventListener("click",e=>{
+      e.preventDefault();    
+      window.scrollTo({
+        top:0,
+        behavior:"smooth",
+      });
+    })
+
+    const scrollObserver = new IntersectionObserver(scrollCallback);
+    scrollObserver.observe(document.getElementById("target-2"));
+  }
 // ↑トップボタンここまで
 
 // アニメーション
