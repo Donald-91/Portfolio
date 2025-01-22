@@ -449,7 +449,7 @@ footer a {
 
 /* スマホサイズ */
 
-@media(max-width:600px) {
+@media(max-width:670px) {
   /* 自己紹介 */
   .main_image img {
     display: block;
