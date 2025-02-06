@@ -323,7 +323,7 @@ td:hover {
 
 /* スマホサイズ */
 
-@media(max-width:700px) {
+@media(max-width:480px) {
 
 /* header */
 
@@ -346,35 +346,45 @@ td:hover {
 
   td {
     font-size: 11px;
-    padding: 10px 25px;
+    padding: 10px 15px;
   }
 
   .select {
-    width: 400px;
+    width: 350px;
     /* width: 300px; */
   }
 
   .select p {
-    font-size: 11px;
+    font-size: 10px;
   }
 
 /* main */
 
   .container {
-    max-width: 500px;
+    max-width: 400px;
+    /* max-width: 500px; */
     /* margin: 0 auto;
     width: calc(100%-32px);
     box-sizing: border-box; */
   }
 
   .pic img {
-    width: 250px;
+    /* width: 250px; */
+    width: 200px;
+  }
+
+  .desc h3 {
+    font-size: 16px;
+  }
+
+  .desc p {
+    font-size: 12px;
   }
 
   /* footer */
 
 .back {
-  font-size: 11px;
+  font-size: 10px;
   padding: 5px 10px;
 }
 
