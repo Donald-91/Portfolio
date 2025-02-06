@@ -350,8 +350,8 @@ td:hover {
   }
 
   .select {
-    /* width: 400px; */
-    width: 300px;
+    width: 400px;
+    /* width: 300px; */
   }
 
   .select p {
