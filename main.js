@@ -19,7 +19,7 @@
   }
   // ↑ハンバーガーここまで
 
-  // 画像クリック
+  // disney画像クリック
   {
     const front = document.getElementById('front');
     const cover = document.getElementById('cover');
@@ -34,7 +34,7 @@
       cover.classList.remove('show');
     });
   }
-  // ↑画像クリックここまで
+  // ↑disney画像クリックここまで
   
 
   // トップボタン
