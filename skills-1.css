@@ -1,0 +1,222 @@
+@charset "utf-8";
+
+
+/* 共通 */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #8fbc8f;
+}
+
+a {
+  text-decoration: none;
+}
+
+ li {
+  list-style: none;
+}
+
+
+/* ヘッダー */
+
+/* header {
+  height: 150px;
+} */
+
+.home {
+  text-align: center;
+}
+
+
+
+.head {
+  display: flex;
+  justify-content: center;
+  /* width: 300px; */
+  /* background-color: aqua; */
+}
+
+.head li {
+  /* background-color: pink; */
+  font-size: 10px;
+  margin: -10px 20px 0;
+}
+
+
+
+/* メイン */
+
+.top {
+  display: flex;
+  justify-content: center;
+  height: 450px;
+  margin-top: 100px;
+}
+
+
+.hero {
+  margin-top: 60px;
+}
+
+
+.hero h1 {
+  /* margin-top: 80px; */
+  font-size: 70px;
+  line-height: 75px;
+  margin-right: 25px;
+}
+
+.hero a {
+  /* display: block; */
+  border: 1.5px solid #dcdcdc;
+  border-radius: 25px;
+  padding: 5px 20px;
+  transition: 0.3s;
+}
+
+.hero a:hover {
+  background-color: #dcdcdc;
+}
+
+.top img {
+  width: 60%;
+  height: auto;
+}
+
+
+
+.recommend {
+  text-align: center;
+  margin: 40px auto;
+  font-size: 30px;
+  animation: go_out 1s ease-in-out infinite alternate;
+}
+
+/* @keyframes go_out {7
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+} */
+
+.selects {
+  display: flex;
+  justify-content: space-around;
+  /* background-color: aqua; */
+}
+
+.select img{
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+}
+
+.select p{
+  text-align: center;
+}
+
+.buy {
+  width: 150px;
+  display: block;
+  text-align: center;
+  margin: 80px auto;
+  border: 1.5px solid #dcdcdc;
+  border-radius: 25px;
+  padding: 5px 20px;
+  transition: 0.3s;
+}
+
+.buy:hover {
+  background-color: #dcdcdc;
+}
+
+.images {
+  display: flex;
+  /* justify-content: center; */
+}
+
+.image {
+  width: 60%;
+  height: auto;
+  margin-left: 3%;
+  /* margin-left: 10px; */
+}
+
+.images h1 {
+  margin-left: 5%;
+  font-size: 50px;
+  margin-top: 120px;
+}
+
+.infos h2 {
+  text-align: center;
+  margin: 100px auto 50px auto;
+  font-size: 30px;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+}
+
+.guide {
+  margin-left: 10%;
+}
+
+.name {
+  border-bottom: 1px solid black;
+}
+
+.open {
+  margin-top: 30px;
+  border-bottom: 1px solid black;
+}
+
+.tel {
+  margin-top: 30px;
+}
+
+.car {
+  margin-top: 60px;
+}
+
+/* フッター */
+
+footer {
+  margin-top: 100px;
+  background-color: aqua;
+}
+
+.bottoms {
+  margin: 0 auto;
+  /* justify-content: center; */
+  /* display: flex; */
+
+}
+
+/* .bottom1 {
+  margin-left: 5%;
+} */
+
+/* .bottom2 {
+  margin-left: 10%;
+} */
+
+
+.small {
+  display: block;
+  text-align: center;
+  /* margin: 0 auto; */
+}
+
+
+/* タブレット？ */
+
+@media (max-width:00px) {
+
+}

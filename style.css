@@ -15,9 +15,10 @@ body {
 /* ヘッダー */
 header {
   /* text-align: center; */
-  height: 700px;
+  height: 2500px;
   padding: 32px 0;
   background-image: url(basket.jpg) ;
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-color: rgba(255, 255, 255, 0.7);
@@ -30,7 +31,8 @@ header {
 }
 
 .title {
-  margin-left: 20px;
+  justify-content: center;
+  text-align: center;
 }
 
 .title a {
@@ -39,14 +41,25 @@ header {
 
 header h1 {
   color: black;
-  font-size: 48px;
+  font-size: 70px;
   font-weight: bold;
+  transition: 0.3s;
+  letter-spacing: 5px;
+  /* width: 700px; */
   /* background-color: aqua; */
+  /* margin: 0 auto; */
+}
+
+header h1:hover {
+  /* background-color: aliceblue; */
+  opacity: 0.5;
+  transition: 0.3s;
 }
 
 header h2 {
   font-size: 32px;
   /* background-color: blueviolet; */
+  text-align: center;
 }
 
 .title p {
@@ -150,6 +163,7 @@ header .welcome {
 .pc-menu {
   display: none;
 }
+/* ↑ここまで */
 
 
 /* トップボタン */
@@ -170,6 +184,79 @@ header .welcome {
   transition: opasity 0.5s;
   opacity: 1;
 }
+/* ↑ここまで */
+
+
+
+
+
+/* ↓ヘッダーアニメーション */
+.hcj {
+  font-size: 60px;
+  margin-top: 300px;
+  /* text-align: center; */
+}
+
+.hc  {
+  margin-top: 300px;
+}
+
+/* .hc img {
+  width: 500px;
+  height: auto;
+  margin-right: 100px;
+} */
+
+.j {
+  margin-top:  500px;
+}
+
+/* .j img {
+  width: 500px;
+  height: auto;
+  margin-left: 100px;
+} */
+
+.r{
+  font-size: 30px;
+  margin-top: 100px;
+  margin-right: 50px;
+}
+
+.l{
+  font-size: 30px;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.feature {
+  display: flex;
+  /* margin: 0 auto; */
+  /* text-align: center; */
+  /* gap: 64px; */
+}
+
+.k {
+  opacity: 0;
+  transition: transform 2s, opacity 2s;
+}
+
+.k.reversed {
+  flex-direction: row-reverse;
+  transform: translateX(-200px);
+}
+
+.k.straight {
+  transform: translateX(200px);
+}
+
+.k.appear {
+  opacity: 1;
+  transform: translateX(0px);
+}
+/* ↑ここまで */
+
+
 
 
 /* メイン */
@@ -179,7 +266,8 @@ main {
   /* background-image: url(main-images.jfif) ; */
   /* background-size: cover; */
   background-position: center;
-  background-color: rgba(255, 255, 255, 0.7);
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  /* background-color: blue; */
   background-blend-mode: lighten;
 }
 
@@ -235,6 +323,7 @@ main {
   /* background: pink; */
   width: 500px;
   margin: auto 0 auto 100px;
+  justify-content: center;
 }
 
 .explain p{
@@ -250,7 +339,7 @@ main {
   width: 170px;
   height: 230px;
   position: absolute;
-  bottom: -950px;
+  /* bottom: -950px; */
   right: 60px;
   opacity: 0.6;
   cursor: pointer;
@@ -261,7 +350,7 @@ main {
   width: 170px;
   height: 230px;
   position: absolute;
-  bottom: -950px;
+  /* bottom: -950px; */
   right: 60px;
   transition: 0.6s;
 }
@@ -303,9 +392,15 @@ main {
   text-align: center;
 }
 
-.card img{
+.card {
+  display: flex;
+}
+
+.card p{
   margin: 0 auto;
-  display: block;
+  width: 400px;
+  height: 250px;
+  background-color: pink;
 }
 
 
@@ -364,6 +459,7 @@ main {
 .animate{
   opacity: 0;
   transition: transform 8s, opacity .8s;
+  /* background-color: blue; */
 }
 .animate.appear{
   opacity: 1;
@@ -467,6 +563,7 @@ footer a {
     width: 380px;
     margin-top: 30px;
     margin-left: -30px;
+    justify-content: center;
   }
 
   .explain p {

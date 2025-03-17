@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* ヘッダー */
+
+header {
+  height: 150px;
+}
+
+.home {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}
+
+
+
+.head {
+  display: flex;
+  justify-content: center;
+  /* width: 300px; */
+  /* background-color: aqua; */
+}
+
+.head li {
+  /* background-color: pink; */
+  font-size: 10px;
+  margin: -10px 20px 0;
+}
+
+.shop {
+  width: 40px;
+  border-bottom: 1px solid black;
+}
+
+
+
+/* メイン */
+
+.parfums {
+  display: flex;
+  /* background-color: aqua; */
+  /* justify-content: space-around; */
+  margin-bottom: 30px;
+}
+
+.parfums img {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+}
+
+.parfum h3 {
+  text-align: center;
+  /* background-color: blue; */
+  margin-top: 2px;
+}
+
+.parfum table {
+  /* justify-content: center; */
+  margin: 0 auto;
+}
+
+.parfum tbody {
+  font-size: 14px;
+  /* text-align: center; */
+  justify-content: center;
+  /* background-color: aqua; */
+  margin-top: -15px;
+  /* background-color: pink; */
+}
+
